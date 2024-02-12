@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionActivity">
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="411dp"
+        android:layout_height="106dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="15dp"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:targetApi="lollipop">
+
+        <LinearLayout
+            android:id="@+id/homeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <ImageView
+                android:id="@+id/homeImg"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/home2" />
+
+            <TextView
+                android:id="@+id/homeTxt"
+                android:layout_width="48dp"
+                android:layout_height="43dp"
+                android:paddingTop="12dp"
+                android:text="Home"
+                android:textColor="@color/Home"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activityLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_back_activities_100"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <ImageView
+                android:id="@+id/activityImg"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/activity" />
+
+            <TextView
+                android:id="@+id/activityTxt"
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:text="Activity"
+                android:textColor="@color/Activity"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <ImageView
+                android:id="@+id/gameImg"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/game2" />
+
+            <TextView
+                android:id="@+id/gameTxt"
+                android:layout_width="59dp"
+                android:layout_height="wrap_content"
+                android:text="Game"
+                android:textColor="@color/Game"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/storyLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <ImageView
+                android:id="@+id/storyImg"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/story2" />
+
+            <TextView
+                android:id="@+id/storyTxt"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Stories"
+                android:textColor="@color/Story"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="622dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/src_assets_images_home_bg" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="163dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ctbaby" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/activityCard"
+        android:layout_width="310dp"
+        android:layout_height="340dp"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="154dp"
+        android:background="@color/video"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:background="@color/video"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parents Only"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:layout_marginLeft="88dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To Continue, Please Enter Correct Answer"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="18dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:layout_marginLeft="60dp"
+                android:text="12 * 4 = ?"
+                android:textColor="@color/white"
+                android:textSize="44sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextNumber"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="98dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/button_q"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#dcedc9"
+                android:text="Submit"
+                android:layout_marginTop="28dp"
+                android:layout_marginLeft="59dp"
+                android:textColor="#409e07"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

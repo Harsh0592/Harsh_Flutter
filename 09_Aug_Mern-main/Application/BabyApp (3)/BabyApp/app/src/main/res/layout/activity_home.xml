@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HomeActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="622dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/src_assets_images_home_bg" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/activityCard"
+        android:layout_width="240dp"
+        android:layout_height="128dp"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_gravity="bottom"
+        android:layout_margin="8dp"
+        android:background="@color/video"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:background="@color/video"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ACTIVITIES"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:paddingLeft="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boost Your Baby's
+                Growth"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="18dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/TaskCard"
+        android:layout_width="240dp"
+        android:layout_height="128dp"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_gravity="bottom"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutG"
+            android:layout_width="240dp"
+            android:layout_height="128dp"
+            android:paddingTop="20dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@color/task"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GAMES"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:paddingLeft="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Boost Your Baby's
+                Learning With Fun"
+                android:textSize="18dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/white"
+                android:paddingLeft="18dp"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/StoryCard"
+        android:layout_width="240dp"
+        android:layout_height="128dp"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_gravity="bottom"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.786">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutS"
+            android:layout_width="240dp"
+            android:layout_height="128dp"
+            android:paddingTop="20dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@color/story"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:paddingLeft="18dp"
+                android:text="STORIES"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boost Creativity and Imagination"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:paddingTop="10dp"
+                android:paddingLeft="18dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/acc"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.038"
+        app:srcCompat="@drawable/src_assets_images_baby" />
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="411dp"
+        android:layout_height="106dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="15dp"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:targetApi="lollipop">
+
+        <LinearLayout
+            android:id="@+id/homeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_back_home_100"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <ImageView
+                android:id="@+id/homeImg"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/home" />
+
+            <TextView
+                android:id="@+id/homeTxt"
+                android:layout_width="48dp"
+                android:layout_height="43dp"
+                android:paddingTop="12dp"
+                android:text="Home"
+                android:textColor="@color/Home"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activityLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <ImageView
+                android:id="@+id/activityImg"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/activity2" />
+
+            <TextView
+                android:id="@+id/activityTxt"
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:text="Activity"
+                android:textColor="@color/Activity"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <ImageView
+                android:id="@+id/gameImg"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/game2" />
+
+            <TextView
+                android:id="@+id/gameTxt"
+                android:layout_width="59dp"
+                android:layout_height="wrap_content"
+                android:text="Game"
+                android:textColor="@color/Game"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/storyLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <ImageView
+                android:id="@+id/storyImg"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/story2" />
+
+            <TextView
+                android:id="@+id/storyTxt"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Stories"
+                android:textColor="@color/Story"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="132dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/activityCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.694"
+        app:srcCompat="@drawable/ctbaby" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
